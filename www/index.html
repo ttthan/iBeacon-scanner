@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.0-beta.1.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>iBeacons</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.0-beta.1.js"></script>
+    <script src="cordova.js"></script>
+    <script src="http://www.chartjs.org/assets/Chart.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="first" data-theme="a">
+      <div data-role="header">
+        <h1>iBeacons scanner</h1>
+      </div>
+      <button id="scanButton"></button>
+      <div data-role="content">
+        <ul data-role="listview" id="deviceList"></ul>
+        <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page #first -->
+    <div data-role="page" id="connected" data-theme="a">
+      <div data-role="header" data-add-back-btn="true">
+        <h1>Informations</h1>
+      </div>
+      <div data-role="content">
+      <!-- <button id="readFile">Read</button> -->
+      <div id="deviceName"></div>
+      <div id="chart"></div>
+      <button id="shareFile">Share Data</button> 
+      <button id="saveGraph">Share Graph</button></div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
